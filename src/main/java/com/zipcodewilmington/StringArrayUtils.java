@@ -1,5 +1,9 @@
 package com.zipcodewilmington;
 
+import com.sun.xml.internal.fastinfoset.util.StringArray;
+
+import java.sql.Array;
+
 /**
  * Created by leon on 1/29/18.
  */
@@ -10,6 +14,7 @@ public class StringArrayUtils {
      */ // TODO
     public static String getFirstElement(String[] array) {
         return array[0];
+
     }
 
     /**
@@ -25,7 +30,7 @@ public class StringArrayUtils {
      * @return last element in specified array
      */ // TODO
     public static String getLastElement(String[] array) {
-        return null;
+        return array[array.length-1];
     }
 
     /**
@@ -33,7 +38,7 @@ public class StringArrayUtils {
      * @return second to last element in specified array
      */ // TODO
     public static String getSecondToLastElement(String[] array) {
-        return null;
+        return array[array.length-2];
     }
 
     /**
@@ -42,7 +47,7 @@ public class StringArrayUtils {
      * @return true if the array contains the specified `value`
      */ // TODO
     public static boolean contains(String[] array, String value) {
-        return false;
+        return true;
     }
 
     /**
@@ -50,7 +55,8 @@ public class StringArrayUtils {
      * @return an array with identical contents in reverse order
      */ // TODO
     public static String[] reverse(String[] array) {
-        return null;
+        
+
     }
 
     /**
