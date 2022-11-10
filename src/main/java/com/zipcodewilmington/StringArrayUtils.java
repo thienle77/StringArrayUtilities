@@ -1,9 +1,5 @@
 package com.zipcodewilmington;
 
-import com.sun.xml.internal.fastinfoset.util.StringArray;
-
-import java.sql.Array;
-
 /**
  * Created by leon on 1/29/18.
  */
@@ -47,7 +43,12 @@ public class StringArrayUtils {
      * @return true if the array contains the specified `value`
      */ // TODO
     public static boolean contains(String[] array, String value) {
-        return true;
+        for (int i = 0; i < array.length; i++) {
+            if ( value.equals(i) ) {
+                return false;
+            }
+        }
+            return true;
     }
 
     /**
@@ -55,16 +56,23 @@ public class StringArrayUtils {
      * @return an array with identical contents in reverse order
      */ // TODO
     public static String[] reverse(String[] array) {
-        
+        int i = 0;
+        String[] reverse = new String[array.length];
+        for (i = 0; i < array.length; i++) {
+            reverse[i] = array[reverse.length - 1 - i];
+        }
 
-    }
-
+        return reverse;
+    } // create new String array that takes elements of old array
+      // will loop through each element of new array
+      // and assigned values in reverse
+    
     /**
      * @param array array of String objects
      * @return true if the order of the array is the same backwards and forwards
      */ // TODO
     public static boolean isPalindromic(String[] array) {
-        return false;
+        return true;
     }
 
     /**
